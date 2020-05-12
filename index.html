@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <style>
+  
+  * {
+  font-family: sans-serif;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: auto;
+  grid-template-areas:
+    "title"
+    "content"
+    "footer";
+}
+
+#articles {
+  grid-area: content;
+  margin: auto;
+  width: 90%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 500px #cfcfcf;
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+
+#title {
+  grid-area: title;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #cfcfcf;
+  font-size: 25px;
+}
+
+#title > p {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+#title > h1 {
+  margin: 10px;
+}
+
+#img-div {
+  display: inline;
+  float: right;
+  shape-outside: ellipse();
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+}
+
+#img-div > p {
+  margin: 0 50px 0 0;
+  font-size: 11px;
+  text-align: end;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#second-img {
+  float: left;
+  shape-outside: ellipse();
+  height: auto;
+  position: relative;
+  bottom: 20px;
+}
+
+.thefall {
+  text-align: right;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+p,
+h2 {
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+#lastportion {
+  margin-top: 40px;
+}
+
+#footer {
+  background-color: #cfcfcf;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  grid-area: footer;
+  width: 90%;
+  margin: auto;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+@media (max-width: 600px) {
+  #img-div,
+  #image,
+  #second-img {
+    float: none;
+    margin: 0 auto;
+    width: 75%;
+    display: block;
+    position: static;
+  }
+
+  #lastportion,
+  .thefall,
+  p {
+    text-align: left;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #article {
+    width: 95%;
+  }
+
+  #img-div > p {
+    text-align: center;
+  }
+}
+
+  
+  </style>
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="title">
+
+      <h1>Alan</h1>
+      <h1> &quot;Blind Owl&quot; Wilson</h1>
+      <p id="tribute-info">Tribute to the virtuoso of the CannedHeat.</p>
+
+    </div>
+
+    <div id="content">
+
+      <div id="articles">
+
+        <h2 id="storyh">The story</h2>
+        <div id="img-div">
+          <img id="image" src="https://s6.gifyu.com/images/alan_wilsonbg.jpg.png" alt="Alan Wilson playing the harmonica">
+          <p id="img-caption">Alan Wilson playing the harmonica</p>
+        </div>
+        <div class="floatLeft">
+          <p>Alan Wilson, later renowned as &quot;Blind Owl&quot; of Canned Heat, was born in Arlington, Massachusetts on July 4, 1943. From an early age, he showed a remarkable aptitude for music. This was supported by his mother, who maintained interests in art, jazz, and culture throughout her life.</p>
+          <p>In junior high school, Wilson was given a jazz record, and taught himself the various instrumental parts by ear. Later, he formed a band called the Crescent City Hot Five with some friends. In school, he played trombone, along with other intellectual activities such as chess which he enjoyed.</p>
+          <p>A shift in interest from jazz to blues marked Wilson&#39;s future career direction. He learned to play bottleneck guitar and harmonica, studying the records of Muddy Waters, Son House, John Lee Hooker, Little Walter, and the like. After graduating high school, he spent time in the Cambridge &quot;folk revival&quot; scene where he performed occasionally at the Club 47 and other venues.</p>
+        </div>
+
+        <p>In 1964, Wilson was instrumental in the rediscovery of Son House. Manager Dick Waterman would later quip that Wilson had &quot;taught Son House how to play Son House&quot;, as he had helped the elder bluesman relearn his old guitar parts heard on early recordings. In 1965, Wilson provided guitar and harmonica accompaniment for House on his Columbia comeback album, Father of the Delta Blues.</p>
+        <h2>On the Road Again</h2>
+        <p>After moving to Los Angeles, Wilson formed Canned Heat with vocalist Bob Hite and guitarist Henry Vestine. Their first album was released in 1967, and Wilson served as the band&#39;s musical director and blues muse through 1970. Their work included performances at the Monterey Pop Festival and Woodstock, as well as an acclaimed collaborative album with John Lee Hooker. Wilson&#39;s unusual high tenor singing, patterned after bluesman Skip James, can be heard on their two biggest hits, &quot;On the Road Again&quot; and &quot;Going Up the Country&quot;.</p>
+        <p>In addition to his musical genius, Wilson was also noteworthy as one of the first rock stars to take up ecology as a cause. While touring with Canned Heat, he studied trees around the world, and memorized the common and taxonomical names for every species he encountered, whether in person or in his botany books. In 1970, he started plans for a nonprofit foundation, Music Mountain, to help preserve old-growth redwood forests in California.</p>
+
+        <p>Although songs inspired by John Lee Hooker&#39;s &quot;Detroit-era boogie&quot; had been recorded over the years by a variety of blues musicians, Canned Heat&#39;s &quot;On the Road Again&quot; popularized the guitar-boogi
+          e or E/G/A riff in the rock world. As a result, &quot;it&#39;s been a standard rock and roll pattern ever since&quot;. Canned Heat used it frequently as the starting point for several of their extended jam songs, including the 40 minute live opus &quot;Refried Boogie (Part I &Alpha; II)&quot; from their late 1968 Living the Blues album. When Hooker recorded an updated version of &quot;Boogie Chillen&#39;&quot;, titled &quot;Boogie Chillen No. 2&quot;, with the group in 1970 for Hooker &#39;n Heat, it had come full circle.</p>
+        <img id="second-img" src="https://s6.gifyu.com/images/alan_parado.png" alt="Alan standing with guitar">
+
+        <div id="lastportion">
+          <h2>The fall</h2>
+          <p class="thefall">In September 1970, Wilson died tragically at the age of 27 after an accidental drug overdose. With various members, Canned Heat has gone on performing and recording throughout the decades. Wilson continues to inspire musicians worldwide, especially in his native area of New England which is a hotbed of blues, folk, and roots music activities.</p>
+
+          <p class="thefall">Wilson’s biography, Blind Owl Blues, was published in 2007 by journalist Rebecca Davis. It’s available through the website <a href="BlindOwlBio.com">BlindOwlBio.com</a>. For more information about Wilson, fans can also visit the family-authorized tribute site, <a id="tribute-link" href="AlanWilsonCannedHeat.com" target="_blank"> AlanWilsonCannedHeat.com</a>, which features rare photos, essays, videos, music downloads, and more. Wilson’s family is also continuing the Music Mountain project, and their site includes a page for donations in his memory to the Save the Redwoods League.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="footer">
+
+      <p> In the loving memory.</p>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
